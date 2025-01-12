@@ -1,1 +1,2 @@
-print("Hello from Python script!")
+#!/bin/bash
+echo "Hello from Bash script!"
