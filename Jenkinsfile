@@ -4,7 +4,7 @@ pipeline {
         stage('Run Script') {
             steps {
                 script {
-                    sh 'bash script.py'
+                    sh 'bash script.sh'
                 }
             }
         }
