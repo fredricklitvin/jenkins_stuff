@@ -5,6 +5,7 @@ pipeline {
             steps {
                 script {
                     echo 'Installing Docker...'
+                    sh 'su root'
                     sh 'sudo yum update -y'
                     sh 'sudo yum install -y docker'
                     sh 'sudo service docker start'
