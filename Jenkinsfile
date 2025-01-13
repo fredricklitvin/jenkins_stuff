@@ -5,11 +5,10 @@ pipeline {
             steps {
                 script {
                     echo 'Installing Docker...'
-                    sh 'sudo -i'
-                    sh 'sudo yum update -y'
-                    sh 'sudo yum install -y docker'
-                    sh 'sudo service docker start'
-                    sh 'sudo usermod -a -G docker ec2-user'
+                    sh 'yum update -y'
+                    sh 'yum install -y docker'
+                    sh 'service docker start'
+                    sh 'usermod -a -G docker ec2-user'
 
                 }
             }
