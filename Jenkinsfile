@@ -20,7 +20,7 @@ pipeline {
                 script {
                     echo 'Building Docker image...'
                     sh '''
-                    sudo ocker build . -t work_pls
+                    sudo docker build . -t work_pls
                     '''
                 }
             }
