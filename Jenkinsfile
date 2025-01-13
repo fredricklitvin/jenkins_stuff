@@ -20,7 +20,7 @@ pipeline {
                 script {
                     echo 'Building Docker image...'
                     sh '''
-                    docker build . -t work_pls
+                    sudo ocker build . -t work_pls
                     '''
                 }
             }
@@ -31,7 +31,7 @@ pipeline {
                 script {
                     echo 'Starting Docker image...'
                     sh '''
-                    docker run -d -p 80:80 work_pls
+                    sudo docker run -d -p 80:80 work_pls
                     '''
                 }
             }
